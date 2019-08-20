@@ -84,25 +84,22 @@ class _UploadPageState extends State<UploadPage> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => false,
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Upload",
-            style: TextStyle(color: Colors.white),
-          ),
-          centerTitle: true,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Upload",
+          style: TextStyle(color: Colors.white),
         ),
-        body: Center(
-          child: sampleImage == null ? Text("Select an Image") : enableUpload(),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: getImage,
-          tooltip: 'Add Image',
-          child: Center(child: Icon(Icons.add_a_photo)),
-          backgroundColor: Colors.cyan,
-        ),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: sampleImage == null ? Text("Select an Image") : enableUpload(),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: getImage,
+        tooltip: 'Add Image',
+        child: Center(child: Icon(Icons.add_a_photo)),
+        backgroundColor: Colors.blue[300],
       ),
     );
   }
@@ -139,7 +136,7 @@ class _UploadPageState extends State<UploadPage> {
                 elevation: 12.0,
                 child: Text("Add a post"),
                 textColor: Colors.white,
-                color: Colors.cyan,
+                color: Colors.blue[300],
                 onPressed: uploadStatusImage,
               )
             ],

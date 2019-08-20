@@ -112,7 +112,7 @@ class _LoginRegisterPageState extends State<LoginRegisterPage> {
     if (formType == FormType.login) {
       return [
         RaisedButton(
-          color: Colors.cyan,
+          color: Colors.blue[300],
           child: Text(
             "Login",
             style: TextStyle(fontSize: 18, color: Colors.white),
@@ -130,7 +130,7 @@ class _LoginRegisterPageState extends State<LoginRegisterPage> {
     } else {
       return [
         RaisedButton(
-          color: Colors.cyan,
+          color: Colors.blue[300],
           child: Text(
             "Create Account",
             style: TextStyle(fontSize: 18, color: Colors.white),

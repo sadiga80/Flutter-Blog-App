@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                 ),
         ),
         bottomNavigationBar: BottomAppBar(
-          color: Colors.cyan,
+          color: Colors.blue[300],
           child: Container(
             height: 70.0,
             margin: EdgeInsets.only(left: 70, right: 70),
