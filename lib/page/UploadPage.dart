@@ -17,6 +17,12 @@ class _UploadPageState extends State<UploadPage> {
   String statusMessage;
   String url;
   final formKey = new GlobalKey<FormState>();
+  Widget button;
+
+  @override
+  initState() {
+    super.initState();
+  }
 
   Future getImage() async {
     var tempImage = await ImagePicker.pickImage(source: ImageSource.gallery);
@@ -134,10 +140,12 @@ class _UploadPageState extends State<UploadPage> {
               ),
               RaisedButton(
                 elevation: 12.0,
-                child: Text("Add a post"),
+                child: Text("Add Post"),
                 textColor: Colors.white,
                 color: Colors.blue[300],
-                onPressed: uploadStatusImage,
+                onPressed: () {
+                  uploadStatusImage();
+                },
               )
             ],
           ),
