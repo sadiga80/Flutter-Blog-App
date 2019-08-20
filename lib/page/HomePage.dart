@@ -50,6 +50,10 @@ class _HomePageState extends State<HomePage> {
     return Card(
       elevation: 12.0,
       margin: EdgeInsets.all(16.0),
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: Theme.of(context).primaryColor),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
       child: Container(
         padding: EdgeInsets.all(12.0),
         child: Column(
@@ -71,18 +75,21 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             SizedBox(
-              height: 8.0,
+              height: 12.0,
             ),
             Image.network(
               image,
               fit: BoxFit.cover,
             ),
             SizedBox(
-              height: 8.0,
+              height: 12.0,
             ),
             Text(
               description,
-              style: Theme.of(context).textTheme.subhead,
+              style: TextStyle(
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.w500,
+              ),
               textAlign: TextAlign.center,
             ),
           ],
@@ -99,7 +106,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           title: Text(
-            "Home",
+            "Blog Posts",
             style: TextStyle(color: Colors.white),
           ),
           centerTitle: true,
