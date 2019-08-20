@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "616907223832",
+    "firebase_url": "https://blogapp-b92bd.firebaseio.com",
+    "project_id": "blogapp-b92bd",
+    "storage_bucket": "blogapp-b92bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616907223832:android:a8a12fd61bfed3b6",
+        "android_client_info": {
+          "package_name": "com.appsan.santhoshadigau.blog_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616907223832-et62omd3e9t5nns3ulelj1ip6c58nu69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrUOdcmy7OOw21VO6ZaAOBLdNh09h2JCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616907223832-et62omd3e9t5nns3ulelj1ip6c58nu69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
